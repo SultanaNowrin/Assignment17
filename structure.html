@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .nav, .main, .first-aside, .second-aside, .footer{
+            border: 1px solid black;
+            background-color: bisque;
+            padding: 30px;
+        }
+        ul>li{
+            list-style: none;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "nav main main first-aside"
+            "nav main main second-aside"
+            "footer footer footer footer"
+            ;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .first-aside{
+            grid-area: first-aside;
+        }
+        .second-aside{
+            grid-area: second-aside;
+        }
+        .footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header class="header">
+            <h1>This is Header</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <main class="main">
+            <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Nemo nobis ducimus at perspiciatis provident possimus atque sapiente inventore velit, 
+                excepturi ipsum repellendus repellat voluptates. Ullam id pariatur dolor facilis, tempore accusamus nihil impedit ipsa labore animi soluta cum eius illo? 
+                Ipsa repellat illo hic, inventore, officiis facilis doloremque velit natus, 
+                a eius ratione ea. Cum asperiores, officia, aspernatur quod illum amet laudantium vero velit ipsum adipisci earum impedit soluta, 
+                eligendi nesciunt eveniet minus. Quis quae facilis placeat reprehenderit. 
+                Libero ad aliquid dolor eveniet, voluptatibus vero minus in nesciunt provident quibusdam cupiditate quaerat officia necessitatibus repudiandae, 
+                ullam voluptate animi odit dolore!</article>
+            <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Labore beatae ut asperiores aut consectetur minus similique quia odio tempore accusamus, 
+                consequuntur dolorum exercitationem perspiciatis veniam fugit omnis nobis ducimus veritatis assumenda esse saepe. 
+                Earum quam, fuga nam beatae, hic necessitatibus non eum dolores temporibus ipsa vel. Ea officiis fuga nobis delectus recusandae numquam nesciunt itaque quam dolorem, 
+                dicta, at facilis non eum vel ab magni exercitationem architecto debitis! Porro autem aspernatur quae inventore asperiores, 
+                labore voluptatum, sapiente obcaecati molestiae accusamus officiis ipsum a. Id modi beatae amet, cum quod accusantium dicta optio, 
+                possimus est voluptate ipsum porro cupiditate eveniet iste?</article>
+        </main>
+        <aside>
+            <div class="first-aside">first aside</div>
+            <div class="second-aside">second aside</div>
+        </aside>
+        <footer class="footer">
+            <h1>This is footer</h1>
+        </footer>
+    </section>
+</body>
+</html>
